@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - ICICI 2026</title>
+    <link rel="icon" type="image/png" href="assets/KIET-LOGO.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -209,58 +210,43 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <h3>ICICI 2026</h3>
-                <p>3rd IEEE International Conference on Intelligent Computing and Imaging (ICICI 2026)</p>
-                <p>KIET Group of Institutions, Ghaziabad</p>
-                <p>April 24-25, 2026</p>
-            </div>
-            <div class="footer-right">
-                <h4>Connect With Us</h4>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
+    <footer class="new-footer-container">
+        <div class="footer-socials-section">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/kiet.edu/?ref=br_rs" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="background-color: #1877F2;" class="social-icon-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/kiet-group-of-institutions/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="background-color: #0077B5;" class="social-icon-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/kiet_edu" target="_blank" rel="noopener noreferrer" aria-label="X/Twitter" style="background-color: #000000;" class="social-icon-link">
+                    <img src="assets/1690643777twitter-x logo-png-white.webp" alt="X" style="width: 16px; height: 16px; filter: brightness(0) invert(1);">
+                </a>
+                <a href="https://www.instagram.com/kiet_edu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="background-color: #000000;" class="social-icon-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@KietEduGzb" target="_blank" rel="noopener noreferrer" aria-label="YouTube" style="background-color: #FF0000;" class="social-icon-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="mailto:icici2026@kiet.edu" target="_blank" rel="noopener noreferrer" aria-label="Email" style="background-color: #D44638;" class="social-icon-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 ICICI Conference. All rights reserved.</p>
+        <div class="footer-bottom-bar">
+            <p>KIET Group of institutions © All Rights Reserved 2025-26</p>
         </div>
     </footer>
 
     <!-- Scroll to Top Button -->
-    <div class="scroll-to-top" id="scrollToTop">
-        <i class="fas fa-arrow-up"></i>
-    </div>
+    <button id="scrollToTop" class="scroll-to-top-progress" aria-label="Go to top" style="display: none;">
+        <svg class="progress-ring" width="50" height="50">
+            <circle class="progress-ring__circle-bg" stroke-width="4" fill="transparent" r="23" cx="25" cy="25" />
+            <circle id="progressCircle" class="progress-ring__circle" stroke-width="4" fill="transparent" r="23" cx="25" cy="25" />
+        </svg>
+        <i class="fas fa-angle-up progress-arrow"></i>
+    </button>
 
-    <script>
-        // Scroll to Top Functionality
-        const scrollToTopBtn = document.getElementById('scrollToTop');
-        
-        window.addEventListener('scroll', () => {
-            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrolled = window.scrollY;
-            const progress = (scrolled / scrollHeight) * 100;
-            
-            scrollToTopBtn.style.setProperty('--scroll-progress', progress + '%');
-            
-            if (scrolled > 300) {
-                scrollToTopBtn.classList.add('visible');
-            } else {
-                scrollToTopBtn.classList.remove('visible');
-            }
-        });
-        
-        scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
