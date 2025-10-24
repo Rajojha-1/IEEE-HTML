@@ -459,6 +459,11 @@ nav.sticky {
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Hide KIET logo on desktop */
+.navbar-logo {
+    display: none;
+}
+
 /* Desktop Navigation */
 .nav-links {
     display: flex;
@@ -723,6 +728,11 @@ section p, .content-text, div.text-content,
 	.speaker-card p, .sponsor-text, .contact-card p {
 		text-align: left !important;
 	}
+
+	/* Keep footer copyright centered on mobile */
+	.footer-bottom-bar p {
+		text-align: center !important;
+	}
 }
 
 /* Mobile-only helper: hide by default, show and bold on mobile */
@@ -742,6 +752,16 @@ section p, .content-text, div.text-content,
 	}
 	.desktop-only-text {
 		display: none !important;
+	}
+
+	/* Show KIET logo on mobile navbar (left side) */
+	.navbar-logo {
+		display: block !important;
+		position: absolute;
+		left: 1.5rem;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2001;
 	}
 
 	/* Ensure all major containers are constrained */
@@ -918,6 +938,7 @@ section p, .content-text, div.text-content,
 
 .footer-bottom-bar p {
     margin: 0;
+    text-align: center;
 }
 
 /* ========================================
@@ -1033,6 +1054,35 @@ section p, .content-text, div.text-content,
 
 .track-content.open {
     max-height: 2000px;
+}
+
+/* Track content list styling for better readability */
+.track-content p {
+    font-family: Poppins;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 1rem 1.5rem;
+}
+
+.track-content ul {
+    list-style-type: disc;
+    padding-left: 2.5rem;
+    margin: 1rem 1.5rem;
+}
+
+.track-content ul li {
+    font-family: Poppins;
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.8;
+    margin: 0.5rem 0;
+    padding-left: 0.5rem;
+}
+
+.track-content ul li::marker {
+    color: #000000;
+    font-size: 1.1rem;
 }
 
 /* Paper Submission Guidelines (guid.html) */

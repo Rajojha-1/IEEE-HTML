@@ -18,6 +18,11 @@
     </div>
 
     <nav id="navbar">
+        <!-- KIET Logo (Mobile Only) -->
+        <a href="index.html" class="navbar-logo">
+            <img src="assets/KIET-LOGO.png" alt="KIET Logo" style="height: 40px; width: auto;">
+        </a>
+
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">HOME</a></li>
             <li><a href="submission.html">CALL FOR PAPERS</a></li>
@@ -25,7 +30,7 @@
             <li><a href="committee.html" class="active">COMMITTEE</a></li>
             <li><a href="programs.html">IMPORTANT DATES</a></li>
             <li><a href="speakers.html">SPEAKERS</a></li>
-            <li><a href="sponsors.html">REGISTRATION</a></li>
+            <li><a href="fee_details.html">REGISTRATION</a></li>
             <li><a href="contact-us.html">CONTACT</a></li>
         </ul>
         <button class="mobile-menu-icon" id="mobileMenuBtn" aria-label="Open menu">
@@ -42,7 +47,7 @@
             <li><a href="committee.html">COMMITTEE</a></li>
             <li><a href="programs.html">IMPORTANT DATES</a></li>
             <li><a href="speakers.html">SPEAKERS</a></li>
-            <li><a href="sponsors.html">REGISTRATION</a></li>
+            <li><a href="fee_details.html">REGISTRATION</a></li>
             <li><a href="contact-us.html">CONTACT</a></li>
         </ul>
     </div>
@@ -614,19 +619,32 @@
             const icon = document.getElementById('icon-' + index);
             const header = content.parentElement.querySelector('.committee-header');
             
-            content.classList.toggle('open');
-            header.classList.toggle('active');
+            // Check if this section is currently open
+            const isOpen = content.classList.contains('open');
             
-            if (icon.classList.contains('fa-angle-down')) {
+            // Close all sections first
+            const allContents = document.querySelectorAll('.committee-content');
+            const allIcons = document.querySelectorAll('.committee-header i');
+            const allHeaders = document.querySelectorAll('.committee-header');
+            
+            allContents.forEach(item => item.classList.remove('open'));
+            allHeaders.forEach(item => item.classList.remove('active'));
+            allIcons.forEach(item => {
+                item.classList.remove('fa-angle-up');
+                item.classList.add('fa-angle-down');
+            });
+            
+            // If the clicked section was closed, open it
+            if (!isOpen) {
+                content.classList.add('open');
+                header.classList.add('active');
                 icon.classList.remove('fa-angle-down');
                 icon.classList.add('fa-angle-up');
-            } else {
-                icon.classList.remove('fa-angle-up');
-                icon.classList.add('fa-angle-down');
             }
         }
     </script>
     <script src="js/script.js"></script>
 </body>
 </html>
+
 
