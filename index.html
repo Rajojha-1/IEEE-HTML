@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICICI 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Poster section (copied from React Navbar component) -->
+    <div class="poster-section">
+        <div class="poster-container">
+            <img id="posterImage" class="poster-image" src="assets/POSTER-1.png" alt="Conference Poster">
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <!-- Desktop Navigation -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="submission.html">CALL FOR PAPERS</a></li>
+            <li><a href="guid.html">PAPER SUBMISSION</a></li>
+            <li><a href="committee.html">COMMITTEE</a></li>
+            <li><a href="programs.html">IMPORTANT DATES</a></li>
+            <li><a href="speakers.html">SPEAKERS</a></li>
+            <li><a href="sponsors.html">REGISTRATION</a></li>
+            <li><a href="contact-us.html">CONTACT</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-icon" id="mobileMenuBtn" aria-label="Open menu">
+            <i class="fas fa-bars" id="menuIcon"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="submission.html">CALL FOR PAPERS</a></li>
+            <li><a href="guid.html">PAPER SUBMISSION</a></li>
+            <li><a href="committee.html">COMMITTEE</a></li>
+            <li><a href="programs.html">IMPORTANT DATES</a></li>
+            <li><a href="speakers.html">SPEAKERS</a></li>
+            <li><a href="sponsors.html">REGISTRATION</a></li>
+            <li><a href="contact-us.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <!-- Mobile Menu Backdrop -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+    <!-- Hero section (from React home.jsx) -->
+    <div class="hero-section" style="width:100%;height:100vh;">
+
+        <!-- Top White Section -->
+        <div style="background-color: white; height:40%; display:flex; align-items:center; justify-content:space-between; padding:0 2rem; position:relative;">
+            <!-- Left Content -->
+            <div style="flex:1; max-width:60%; text-align:left;">
+                <p style="color:#05B8A8; font-size:1.2rem; font-family:Poppins; font-weight:600; margin:0 0 1rem 0; letter-spacing:1px;">ICICI 2026</p>
+                <div class="mobile-only-text" style="color:#666; font-family:Poppins; font-size:1.1rem; font-weight:700; line-height:1.7; margin:0 0 1.5rem 0; text-align:left;">
+                    <div>Join global experts, researchers, and innovators</div>
+                    <div>for groundbreaking research, collaboration,</div>
+                    <div>and learning.</div>
+                </div>
+                <h1 style="color:#333; font-family:Poppins; font-size:3.8rem; font-weight:bold; line-height:1.1; margin:0; text-align:left;">Shaping the Future of<br>Intelligent Computing</h1>
+            </div>
+
+            <!-- Right Content - visible on desktop only -->
+            <div class="desktop-only-text" style="position:absolute; right:0; flex:1; max-width:45%; display:flex; align-items:center; justify-content:flex-start; padding-right:5rem; padding-top:4rem; padding-left:2rem;">
+                <div style="color:#666; font-family:Poppins; font-size:1.1rem; line-height:1.7; margin:0; text-align:left;">
+                    <div>Join global experts, researchers, and innovators</div>
+                    <div>for groundbreaking research, collaboration,</div>
+                    <div>and learning.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Blue Tech Section - Slider background -->
+        <div style="position:relative; height:60%; background-image:url('assets/KIET1.jpg'); background-size:120%; background-position:center; background-repeat:no-repeat; display:flex; align-items:center; padding:0 4rem; overflow:hidden;">
+            <!-- Blue overlay -->
+            <div style="position:absolute; top:0; left:0; right:0; bottom:0; background:linear-gradient(135deg, rgba(0,51,152,0.61), rgba(0,100,200,0.8)); z-index:1;"></div>
+
+            <div style="position:relative; z-index:2; color:white; width:100%;">
+                <div style="margin-bottom:5rem;">
+                    <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem;">
+                        <i class="fa fa-calendar" style="color:white"></i>
+                        <p style="font-family:Poppins; font-size:1.1rem; margin:0; display:inline-block;">24th - 25th April, 2026</p>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:0.5rem;">
+                        <i class="fa fa-map-marker" style="color:white"></i>
+                        <p style="font-family:Poppins; font-size:1.1rem; margin:0; display:inline-block;">KIET Group Of Institutions, Ghaziabad, India</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 style="font-family:Poppins; font-size:2.5rem; font-weight:300; margin:0; line-height:1.3; text-align:left;">Exploring The Future Of Computing<br>And Technology</h2>
+                </div>
+            </div>
+
+            <!-- Progress indicators (static placeholders) -->
+            <div class="progress-indicators" style="position:absolute; left:2rem; right:2rem; top:50%; transform:translateY(-50%);">
+                <div style="position:absolute; top:50%; left:2rem; right:2rem; height:2px; background-color:rgba(255,255,255,0.3); transform:translateY(-50%); z-index:1;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About / content sections from React home.jsx -->
+    <div style="background-color:white; padding-top:6rem; padding-bottom:2rem; padding-left:2rem; padding-right:2rem; display:flex; gap:2rem;" class="responsive-row">
+        <div style="flex:1; text-align:left;">
+            <h1 style="font-family:Poppins; font-size:2.5rem; margin-top:0.5rem; color:#555;">About the Conference</h1>
+            <p style="font-family:Poppins; font-size:1.5rem; font-weight:500; margin-top:1rem; color:#555;">International Conference on Innovations in Computational Intelligence (ICICI–2026)</p>
+            <p style="font-family:Poppins; margin-top:1rem; line-height:1.6; color:#555;">The International Conference on Innovations in Computational Intelligence (ICICI-2026), organized by KIET Group of Institutions, Delhi-NCR, Ghaziabad, India, will be held on April 24–25, 2026. This prestigious event aims to bring together researchers, academicians, industry professionals, and students to share innovative ideas and research in artificial intelligence, machine learning, and computational intelligence. The conference will feature keynote sessions by global experts, technical paper presentations, panel discussions, and hands-on workshops covering emerging areas such as deep learning, NLP, computer vision, big data analytics, IoT, and cyber security. ICICI-2026 provides a global platform to explore advancements, foster collaboration, and inspire innovation in the rapidly evolving world of AI and computational sciences.</p>
+        </div>
+        <div style="flex:1; align-self:flex-start;">
+            <img src="assets/ABOUT-CONFERENCE.JPG" alt="Conference collaboration" style="width:100%; height:50vh; object-fit:cover; border-radius:8px; margin-top:3.5rem;" />
+        </div>
+    </div>
+
+    <div style="background-color:white; padding:1.5rem 0.5rem; display:flex; gap:2rem;" class="responsive-row">
+        <div style="flex:1;" class="about-section-image">
+            <img src="assets/EXPLORING-ICICI_2026.JPG" alt="Exploring ICICI" style="width:100%; height:50vh; object-fit:cover; border-radius:8px;" />
+        </div>
+        <div style="flex:1; text-align:left;" class="about-section-text">
+            <h1 style="font-family:Poppins; font-size:2.5rem; margin-top:0.5rem; color:#555;">Exploring ICICI–2026</h1>
+            <p style="font-family:Poppins; font-size:1.2rem; margin-top:1rem; color:#555;">ICICI-2026 is not just an academic conference but a vibrant platform for networking, collaboration, and knowledge exchange.</p>
+            <p style="font-family:Poppins; margin-top:1rem; line-height:1.6; color:#555;">ICICI-2026 brings together researchers, academicians, industry professionals, and students to explore emerging trends and practical applications in AI and computational intelligence. The event encourages meaningful discussions, fosters research partnerships, and provides valuable insights into the future of AI, machine learning, and intelligent systems.</p>
+            <div style="background-color:#f0edff; color:#1f2937; padding:0.75rem 1rem; border-radius:8px; border:1px solid #ffedd5; max-width:900px; text-align:left; font-family:Poppins; font-size:1rem; font-weight:600; margin-top:1rem;">All the accepted, registered, and presented papers will be submitted to IEEE Xplore (Scopus Indexed) through IEEE Computational Intelligence Society (CIS) for possible inclusion.</div>
+        </div>
+    </div>
+
+    <div style="background-color:white; padding-top:1.5rem; padding-bottom:0; padding-left:0.5rem; padding-right:0.5rem; display:flex; gap:2rem;" class="video-section responsive-row">
+        <div style="flex:1; text-align:left;">
+            <h1 style="font-family:Poppins; font-size:2.5rem; margin-top:0.5rem; color:#555;">About KIET Group of Institutions</h1>
+            <p style="font-family:Poppins; font-size:1.5rem; font-weight:500; margin-top:1rem; color:#555;">Exploring the Future of Computing and Technology</p>
+            <p style="font-family:Poppins; margin-top:1rem; line-height:1.6; color:#555;">KIET Group of Institutions, established in 1998 by the Krishna Charitable Society, is recognized as one of the leading engineering colleges in Delhi-NCR and a pioneer in the field of technical education. Beginning with just 180 students, the institute has grown remarkably to a strength of over 7,500 students, supported by a vibrant alumni network of 20,000+ professionals across the globe. Guided by its vision of skill-oriented and value-based education, KIET focuses on nurturing young minds to become competent and responsible professionals. The institute’s commitment to innovation, academic excellence, and holistic development has earned it numerous Education Excellence Awards and a distinct reputation among technical institutions in Uttar Pradesh. Accredited by NAAC with Grade ‘A+’, and with several programs including CSE, CSIT, CS, ECE, EEE, IT, ME, CE, MCA, MBA, and Pharmacy accredited by NBA, KIET continues to uphold its legacy of “Achieving High” through quality education, strong industry connect, and outstanding placement records.</p>
+        </div>
+        <div class="about-section-image" style="flex:1; position:relative;">
+            <div id="kietImageSlider" style="position:relative; width:100%; height:50vh; border-radius:8px; overflow:hidden;">
+                <!-- First Image -->
+                <img class="kiet-slide" data-index="0" src="assets/ABOUT-KIET-1.jpg" alt="About KIET 1" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:1; transition:opacity 0.5s ease-in-out;" />
+                <!-- Second Image -->
+                <img class="kiet-slide" data-index="1" src="assets/ABOUT-KIET.JPG" alt="About KIET 2" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:0; transition:opacity 0.5s ease-in-out;" />
+            </div>
+            <!-- Navigation Dots -->
+            <div style="position:absolute; bottom:15px; left:50%; transform:translateX(-50%); display:flex; gap:10px; z-index:10;">
+                <button class="kiet-dot" data-index="0" onclick="setKietSlide(0)" style="width:12px; height:12px; border-radius:50%; background-color:white; border:none; cursor:pointer; box-shadow:0 2px 4px rgba(0,0,0,0.3); transition:all 0.3s ease;" aria-label="Image 1"></button>
+                <button class="kiet-dot" data-index="1" onclick="setKietSlide(1)" style="width:10px; height:10px; border-radius:50%; background-color:rgba(255,255,255,0.6); border:none; cursor:pointer; box-shadow:0 2px 4px rgba(0,0,0,0.3); transition:all 0.3s ease;" aria-label="Image 2"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- end of React-like content insertion -->
+
+    <div class="carousel-wrapper">
+        <h1 class="about-title">RESEARCH TRACKS</h1>
+
+        <div class="carousel-container">
+            <button class="nav-arrow left"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel-track">
+                <div class="card" data-index="0" data-name="Artificial Intelligence" data-role="AI & ML" data-color="#4A90E2">
+                    <div class="card-image" style="background-image: url('assets/AI.jpg');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Artificial Intelligence</h3>
+                        <p class="card-subtitle">AI & ML</p>
+                        <div class="card-accent" style="background-color: #4A90E2;"></div>
+                    </div>
+                </div>
+                <div class="card" data-index="1" data-name="Data Science" data-role="Big Data Analytics" data-color="#7ED321">
+                    <div class="card-image" style="background-image: url('assets/Data-science.jpg');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Data Science</h3>
+                        <p class="card-subtitle">Big Data Analytics</p>
+                        <div class="card-accent" style="background-color: #7ED321;"></div>
+                    </div>
+                </div>
+                <div class="card" data-index="2" data-name="Internet of Things" data-role="IoT & Smart Systems" data-color="#F5A623">
+                    <div class="card-image" style="background-image: url('assets/IOT.jpg');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Internet of Things</h3>
+                        <p class="card-subtitle">IoT & Smart Systems</p>
+                        <div class="card-accent" style="background-color: #F5A623;"></div>
+                    </div>
+                </div>
+                <div class="card" data-index="3" data-name="Cybersecurity" data-role="Cryptography" data-color="#D0021B">
+                    <div class="card-image" style="background-image: url('assets/Cyber-security.jpg');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cybersecurity</h3>
+                        <p class="card-subtitle">Cryptography</p>
+                        <div class="card-accent" style="background-color: #D0021B;"></div>
+                    </div>
+                </div>
+                <div class="card" data-index="4" data-name="Natural Language" data-role="NLP & Speech" data-color="#9013FE">
+                    <div class="card-image" style="background-image: url('assets/Natural.jpg');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Natural Language</h3>
+                        <p class="card-subtitle">NLP & Speech</p>
+                        <div class="card-accent" style="background-color: #9013FE;"></div>
+                    </div>
+                </div>
+                <div class="card" data-index="5" data-name="Computer Vision" data-role="Image Processing" data-color="#50E3C2">
+                    <div class="card-image" style="background-image: url('assets/Computervision.jpg');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Computer Vision</h3>
+                        <p class="card-subtitle">Image Processing</p>
+                        <div class="card-accent" style="background-color: #50E3C2;"></div>
+                    </div>
+                </div>
+                <div class="card" data-index="6" data-name="Interdisciplinary Research" data-role="Distributed Tech" data-color="#F8E71C">
+                    <div class="card-image" style="background-image: url('assets/Research.jpg');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Interdisciplinary Research</h3>
+                        <p class="card-subtitle">Distributed Tech</p>
+                        <div class="card-accent" style="background-color: #F8E71C;"></div>
+                    </div>
+                </div>
+                <div class="card" data-index="7" data-name="Computational Intelligence" data-role="Emerging Tech" data-color="#BD10E0">
+                    <div class="card-image" style="background-image: url('assets/Intelligence.jpg');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Computational Intelligence</h3>
+                        <p class="card-subtitle">Emerging Tech</p>
+                        <div class="card-accent" style="background-color: #BD10E0;"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="nav-arrow right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="member-info">
+            <h2 class="member-name">Artificial Intelligence</h2>
+            <p class="member-role">AI & ML</p>
+        </div>
+
+        <div class="dots">
+            <div class="dot active" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+            <div class="dot" data-index="3"></div>
+            <div class="dot" data-index="4"></div>
+            <div class="dot" data-index="5"></div>
+            <div class="dot" data-index="6"></div>
+            <div class="dot" data-index="7"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="new-footer-container">
+        <div class="footer-socials-section">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/kiet.edu/?ref=br_rs" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="background-color: #1877F2;" class="social-icon-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/kiet-group-of-institutions/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="background-color: #0077B5;" class="social-icon-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/kiet_edu" target="_blank" rel="noopener noreferrer" aria-label="X/Twitter" style="background-color: #000000;" class="social-icon-link">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/kiet_edu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="background-color: #000000;" class="social-icon-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@KietEduGzb" target="_blank" rel="noopener noreferrer" aria-label="YouTube" style="background-color: #FF0000;" class="social-icon-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="mailto:icici2026@kiet.edu" target="_blank" rel="noopener noreferrer" aria-label="Email" style="background-color: #D44638;" class="social-icon-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <p>KIET Group of institutions © All Rights Reserved 2025-26</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top-progress" aria-label="Go to top" style="display: none;">
+        <svg class="progress-ring" width="50" height="50">
+            <circle class="progress-ring__circle-bg" stroke-width="4" fill="transparent" r="23" cx="25" cy="25" />
+            <circle id="progressCircle" class="progress-ring__circle" stroke-width="4" fill="transparent" r="23" cx="25" cy="25" />
+        </svg>
+        <i class="fas fa-angle-up progress-arrow"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

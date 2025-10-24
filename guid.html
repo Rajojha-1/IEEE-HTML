@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Submission - ICICI 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Poster section -->
+    <div class="poster-section">
+        <div class="poster-container">
+            <img id="posterImage" class="poster-image" src="assets/POSTER-1.png" alt="Conference Poster">
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="submission.html">CALL FOR PAPERS</a></li>
+            <li><a href="guid.html" class="active">PAPER SUBMISSION</a></li>
+            <li><a href="committee.html">COMMITTEE</a></li>
+            <li><a href="programs.html">IMPORTANT DATES</a></li>
+            <li><a href="speakers.html">SPEAKERS</a></li>
+            <li><a href="sponsors.html">REGISTRATION</a></li>
+            <li><a href="contact-us.html">CONTACT</a></li>
+        </ul>
+        <button class="mobile-menu-icon" id="mobileMenuBtn" aria-label="Open menu">
+            <i class="fas fa-bars" id="menuIcon"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="submission.html">CALL FOR PAPERS</a></li>
+            <li><a href="guid.html">PAPER SUBMISSION</a></li>
+            <li><a href="committee.html">COMMITTEE</a></li>
+            <li><a href="programs.html">IMPORTANT DATES</a></li>
+            <li><a href="speakers.html">SPEAKERS</a></li>
+            <li><a href="sponsors.html">REGISTRATION</a></li>
+            <li><a href="contact-us.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <!-- Mobile Menu Backdrop -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="width: 100%; height: 100vh;">
+        <!-- Top White Section -->
+        <div style="background-color: white; height: 40%; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; position: relative;">
+            <!-- Left Content -->
+            <div style="flex: 1; max-width: 60%; text-align: left;">
+                <p style="color: #05B8A8; font-size: 1.2rem; font-family: Poppins; font-weight: 600; margin: 0 0 1rem 0; letter-spacing: 1px;">ICICI 2026</p>
+                <div class="mobile-only-text" style="color: #666; font-family: Poppins; font-size: 1.1rem; font-weight: 700; line-height: 1.7; margin: 0 0 1.5rem 0; text-align: left;">
+                    <div>Contribute Your Original, Unpublished Work</div>
+                    <div>And Be Part Of IEEE's Global Research And</div>
+                    <div>Innovation Community</div>
+                </div>
+                <h1 style="color: #333; font-family: Poppins; font-size: 3.8rem; font-weight: bold; line-height: 1.1; margin: 0; text-align: left;">Paper Submission</h1>
+                <p style="color: #666; font-size: 1.2rem; font-family: Poppins; font-weight: 500; margin: 1rem 0 0 0; letter-spacing: 0.5px; text-align: left;">Be Part of IEEE's Global Research Community</p>
+            </div>
+            <!-- Right Content - visible on desktop only -->
+            <div class="desktop-only-text" style="position: absolute; right: 0; flex: 1; max-width: 45%; display: flex; align-items: center; justify-content: flex-start; padding-top: 4rem; padding-left: 2rem; padding-right: 5rem;">
+                <div style="color: #666; font-family: Poppins; font-size: 1.1rem; line-height: 1.7; margin: 0; text-align: left;">
+                    <div>Contribute Your Original, Unpublished Work</div>
+                    <div>And Be Part Of IEEE's Global Research And</div>
+                    <div>Innovation Community</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Blue Section -->
+        <div style="position: relative; height: 60%; background-image: url('assets/KIET1.jpg'); background-size: 120%; background-position: center; background-repeat: no-repeat; display: flex; align-items: center; padding: 0 4rem; overflow: hidden;">
+            <!-- Blue Overlay -->
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(0, 51, 152, 0.61), rgba(0, 100, 200, 0.8)); z-index: 1;"></div>
+            <!-- Content -->
+            <div style="position: relative; z-index: 2; color: white; width: 100%;">
+                <div style="margin-bottom: 5rem;">
+                    <h2 style="font-family: Poppins; font-size: 2.5rem; font-weight: 300; margin: 0; line-height: 1.3; text-align: left;">
+                        Contribute Your Original, Unpublished Work<br />
+                        And Be Part Of IEEE's Global Research And<br />
+                        Innovation Community
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+        <!-- Paper Submission Content -->
+    <section class="mobileview-mainpadding" style="background-color: #f5f5f5; padding: 2rem 1rem; min-height: 100vh;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; gap: 2rem;" class="responsive-row">
+            <!-- Left Sidebar -->
+            <div class="sidebar" style="width: 300px; display: flex; flex-direction: column; gap: 1rem;">
+                <!-- Important Dates Card -->
+                <div style="background-color: #4a5568; border-radius: 15px; padding: 1.5rem; color: white;">
+                    <div style="background-color: #2d3748; border-radius: 20px; padding: 0.5rem 1rem; font-size: 0.8rem; font-family: Poppins; font-weight: 600; margin-bottom: 1rem; text-align: center; letter-spacing: 1px;">
+                        IMPORTANT DATES
+                    </div>
+                    <div style="font-family: Poppins; font-size: 0.9rem; line-height: 1.6; color: #e2e8f0;">
+                        <p style="margin: 0.5rem 0;">Paper Submission: November 15, 2025</p>
+                        <p style="margin: 0.5rem 0;">Notification: February 15, 2026</p>
+                        <p style="margin: 0.5rem 0;">Camera Ready & Registration: March 15, 2026</p>
+                        <p style="margin: 0.5rem 0;">Conference: April 24-25, 2026</p>
+                    </div>
+                </div>
+
+                <!-- Contact Us Card -->
+                <div style="background-color: #4a5568; border-radius: 15px; padding: 1.5rem; color: white;">
+                    <div style="background-color: #2d3748; border-radius: 20px; padding: 0.5rem 1rem; font-size: 0.8rem; font-family: Poppins; font-weight: 600; margin-bottom: 1rem; text-align: center; letter-spacing: 1px;">
+                        CONTACT US
+                    </div>
+                    <div style="font-family: Poppins; font-size: 0.9rem; line-height: 1.6; color: #e2e8f0; display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="display: flex; justify-content: center; align-items: center; gap: 0.5rem;">
+                            <div style="text-align: center;">
+                                <p style="margin: 0;">Dr. Puneet Garg <br />(+91-9996091999)</p>
+                                <p style="margin: 0;">Dr. Manish Bhardwaj <br />(+91-9457966671)</p>
+                                <br />
+                                <p style="margin: 0;">Email: icici@kiet.edu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content Area -->
+            <div class="mobileview-notmainpadding" style="flex: 1; background-color: white; border-radius: 15px; padding: 1rem; text-align: left;">
+                <!-- Author Guidelines -->
+                <div style="margin-bottom: 3rem;">
+                    <h1 style="font-family: Poppins; font-size: 2.5rem; color: #333; margin: 0 0 1.5rem 0; font-weight: bold;">Author Guidelines</h1>
+                    <ul style="font-family: Poppins; font-size: 1rem; color: #666; line-height: 1.8; padding-left: 1.5rem;">
+                        <li>Papers must be original, unpublished, and not under consideration elsewhere.</li>
+                        <li>Manuscripts should follow the IEEE conference format strictly.</li>
+                        <li>The plagiarism level must be below 10%, as per IEEE standards.</li>
+                        <li>Papers should be written in English, ensuring clarity and conciseness.</li>
+                        <li>The manuscript should be 6 pages, including figures, tables, and references.</li>
+                        <li>Each submission will undergo a double-blind peer-review process by three expert reviewers to ensure quality.</li>
+                        <li>Accepted and presented papers will be published in IEEE Xplore (Scopus Indexed).</li>
+                        <li>At least one author must register and present the paper at the conference for inclusion in the proceedings.</li>
+                    </ul>
+                </div>
+
+                <!-- Submission Guidelines -->
+                <div style="margin-bottom: 3rem;">
+                    <h2 style="font-family: Poppins; font-size: 2rem; color: #333; margin: 0 0 1.5rem 0; font-weight: bold;">Submission Guidelines</h2>
+                    <ul style="font-family: Poppins; font-size: 1rem; color: #666; line-height: 1.8; padding-left: 1.5rem;">
+                        <li>Papers should be submitted in PDF format following the IEEE conference template.</li>
+                        <li>Any submission with plagiarism exceeding 10% will be automatically rejected.</li>
+                        <li>The peer-review process will be double-blind, meaning author names and affiliations should not appear in the manuscript.</li>
+                        <li>Authors should ensure proper formatting, citations, and adherence to IEEE standards.</li>
+                        <li>Only high-quality, accepted, and presented papers will be included in IEEE Xplore.</li>
+                        <li>Accepted papers will be presented at the conference, and all registered participants will receive a certificate of participation.</li>
+                        <li>Papers submitted to the conference should be written in English with the maximum paper length of Six (6) in IEEE format.</li>
+                        <li>However, the authors can extend maximum 1 page with an over length page charge, of Rs.1,000/-(for Indian participants) and US $50/-(for International participants) per page.</li>
+                        <li>The "Best Paper Awards" will be given for each track of conference selected by the committee among the presented papers in ICICI-2026.</li>
+                        <li>Submit your papers through the conference submission portal by <strong>15th November, 2025</strong>.</li>
+                    </ul>
+                    <div class="submission-box">
+                        <p style="font-family: Poppins; font-size: 1rem; color: #333; margin: 0;">Authors may download the IEEE paper template here.</p>
+                        <a href="https://www.kiet.edu/icici2026/images/Paper%20Template.docx" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                            <button style="background-color: rgba(0,0,100,0.8); color: white; border: none; border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; font-weight: bold; cursor: pointer;">Download</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Where to Submit -->
+                <div style="margin-bottom: 3rem;">
+                    <h2 style="font-family: Poppins; font-size: 2rem; color: #333; margin: 0 0 1.5rem 0; font-weight: bold;">Where to Submit</h2>
+                    <ul style="font-family: Poppins; font-size: 1rem; color: #666; line-height: 1.8; padding-left: 1.5rem;">
+                        <li>All papers must be submitted via the Microsoft CMT Portal.</li>
+                        <li>Authors should create an account on the Microsoft CMT platform for submission.</li>
+                        <li>The submission link will be available under the Communication section on the conference website.</li>
+                    </ul>
+                    <div class="submission-box green">
+                        <p style="font-family: Poppins; font-size: 1rem; color: #333; margin: 0;">Submit your paper through the Microsoft CMT Portal.</p>
+                        <a href="https://cmt3.research.microsoft.com/ICICI2026" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                            <button style="background-color: rgba(0,100,0,0.8); color: white; border: none; border-radius: 8px; padding: 0.75rem 1.5rem; font-size: 0.9rem; font-weight: bold; cursor: pointer;">Submission Link</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- How to Submit -->
+                <div style="margin-bottom: 3rem;">
+                    <h2 style="font-family: Poppins; font-size: 2rem; color: #333; margin: 0 0 1.5rem 0; font-weight: bold;">How to Submit</h2>
+                    <ol style="font-family: Poppins; font-size: 1rem; color: #666; line-height: 1.8; padding-left: 1.5rem;">
+                        <li><strong>Register/Login:</strong> Go to the Microsoft CMT Portal. Create an account if you are a new user or log in with existing credentials.</li>
+                        <li><strong>Select the Conference:</strong> Search for ICICI-2026 in the conference list.</li>
+                        <li><strong>Upload the Paper:</strong> Click on "Submit Paper" and fill in the required details. Upload the PDF manuscript following the IEEE conference format.</li>
+                        <li><strong>Provide Author Details:</strong> Enter the full names, affiliations, and contact details of all authors.</li>
+                        <li><strong>Confirm Submission:</strong> Review the uploaded manuscript and details for accuracy. Click Submit to complete the process.</li>
+                    </ol>
+                </div>
+
+                <!-- Review Process & Notification -->
+                <div style="margin-bottom: 3rem;">
+                    <h2 style="font-family: Poppins; font-size: 2rem; color: #333; margin: 0 0 1.5rem 0; font-weight: bold;">Review Process & Notification</h2>
+                    <ul style="font-family: Poppins; font-size: 1rem; color: #666; line-height: 1.8; padding-left: 1.5rem;">
+                        <li>Each submission will be reviewed by three competent reviewers.</li>
+                        <li>Authors will receive review feedback upon completion of the review process.</li>
+                        <li>If accepted, authors must submit the camera-ready version within the specified deadline.</li>
+                    </ul>
+                </div>
+
+                <!-- Publication and Indexing -->
+                <div>
+                    <h2 style="font-family: Poppins; font-size: 2rem; color: #333; margin: 0 0 1.5rem 0; font-weight: bold;">Publication and Indexing</h2>
+                    <ul style="font-family: Poppins; font-size: 1rem; color: #666; line-height: 1.8; padding-left: 1.5rem;">
+                        <li>The final accepted papers will be considered for presentation in hybrid mode.</li>
+                        <li>All the accepted and presented papers will be submitted to IEEE Xplore (Scopus Indexed) for possible inclusion through IEEE CIS.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="new-footer-container">
+        <div class="footer-socials-section">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/kiet.edu/?ref=br_rs" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="background-color: #1877F2;" class="social-icon-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/kiet-group-of-institutions/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="background-color: #0077B5;" class="social-icon-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/kiet_edu" target="_blank" rel="noopener noreferrer" aria-label="X/Twitter" style="background-color: #000000;" class="social-icon-link">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/kiet_edu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="background-color: #000000;" class="social-icon-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@KietEduGzb" target="_blank" rel="noopener noreferrer" aria-label="YouTube" style="background-color: #FF0000;" class="social-icon-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="mailto:icici2026@kiet.edu" target="_blank" rel="noopener noreferrer" aria-label="Email" style="background-color: #D44638;" class="social-icon-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <p>KIET Group of institutions © All Rights Reserved 2025-26</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTop" class="scroll-to-top-progress" aria-label="Go to top" style="display: none;">
+        <svg class="progress-ring" width="50" height="50">
+            <circle class="progress-ring__circle-bg" stroke-width="4" fill="transparent" r="23" cx="25" cy="25" />
+            <circle id="progressCircle" class="progress-ring__circle" stroke-width="4" fill="transparent" r="23" cx="25" cy="25" />
+        </svg>
+        <i class="fas fa-angle-up progress-arrow"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
