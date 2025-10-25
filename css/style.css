@@ -310,8 +310,9 @@ body {
 
 @media (max-width: 1024px) {
 	.about-title {
-		font-size: 2rem;
+		font-size: 2.5rem;
 		white-space: nowrap;
+		margin-bottom: -40px;
 	}
 
 	/* KIET Image Slider mobile height */
@@ -939,6 +940,14 @@ section p, .content-text, div.text-content,
 .footer-bottom-bar p {
     margin: 0;
     text-align: center;
+}
+
+/* ========================================
+   Sidebar Cards - Center Content
+   ======================================== */
+div[style*="background-color: #4a5568"] p,
+div[style*="background-color: #4a5568"] div {
+    text-align: center !important;
 }
 
 /* ========================================
