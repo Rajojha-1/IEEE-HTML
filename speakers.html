@@ -13,7 +13,7 @@
     <!-- Poster section -->
     <div class="poster-section">
         <div class="poster-container">
-            <img id="posterImage" class="poster-image" src="assets/POSTER-1.png" alt="Conference Poster">
+            <img id="posterImage" class="poster-image" src="assets/FINALPOSTER.png" alt="Conference Poster">
         </div>
     </div>
 
@@ -107,24 +107,17 @@
     </section>
 
     <!-- Main Content -->
-    <section class="mobileview-mainpadding" style="background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%); padding: 1.5rem 0.5rem; min-height: 100vh; color: white; position: relative; overflow: hidden;">
-        <!-- Full-area overlay -->
-        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 900; display: flex; justify-content: center; align-items: center; background: rgba(255,255,255,0.06); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); pointer-events: none;">
-            <div style="font-family: Poppins; font-size: 2.25rem; font-weight: 900; color: #000; text-align: center; padding: 0.5rem 1rem; border-radius: 8px;">
-                Soon to be updated
-            </div>
-        </div>
-
-        <div class="responsive-row" style="max-width: 1200px; margin: 0 auto; display: flex; gap: 2rem; position: relative; z-index: 1;">
+    <section class="mobileview-mainpadding" style="background-color: #f5f5f5; padding: 2rem 1rem; min-height: 100vh;">
+        <div class="responsive-row" style="max-width: 1200px; margin: 0 auto; display: flex; gap: 2rem;">
             <!-- Left Sidebar -->
             <div class="sidebar" style="width: 300px; display: flex; flex-direction: column; gap: 1rem;">
                 <!-- Important Dates Card -->
-                <div style="background-color: #4a5568; border-radius: 15px; padding: 1.5rem; color: white; position: relative; z-index: 910;">
+                <div style="background-color: #4a5568; border-radius: 15px; padding: 1.5rem; color: white;">
                     <div style="background-color: #2d3748; border-radius: 20px; padding: 0.5rem 1rem; font-size: 0.8rem; font-family: Poppins; font-weight: 600; margin-bottom: 1rem; text-align: center; letter-spacing: 1px;">
                         IMPORTANT DATES
                     </div>
                     <div style="font-family: Poppins; font-size: 0.9rem; line-height: 1.6; color: #e2e8f0;">
-                        <p style="margin: 0.5rem 0;">Paper Submission: November 15, 2025</p>
+                        <p style="margin: 0.5rem 0;">Paper Submission: <s>30 November, 2025</s> 31 December, 2025 (Extended deadline)</p>
                         <p style="margin: 0.5rem 0;">Notification: February 15, 2026</p>
                         <p style="margin: 0.5rem 0;">Camera Ready & Registration: March 15, 2026</p>
                         <p style="margin: 0.5rem 0;">Conference: April 24-25, 2026</p>
@@ -132,7 +125,7 @@
                 </div>
 
                 <!-- Contact Us Card -->
-                <div style="background-color: #4a5568; border-radius: 15px; padding: 1.5rem; color: white; position: relative; z-index: 910;">
+                <div style="background-color: #4a5568; border-radius: 15px; padding: 1.5rem; color: white;">
                     <div style="background-color: #2d3748; border-radius: 20px; padding: 0.5rem 1rem; font-size: 0.8rem; font-family: Poppins; font-weight: 600; margin-bottom: 1rem; text-align: center; letter-spacing: 1px;">
                         CONTACT US
                     </div>
@@ -150,22 +143,122 @@
             </div>
 
             <!-- Right Content Area -->
-            <div class="mobileview-notmainpadding" style="flex: 1; background-color: white; border-radius: 15px; padding: 1rem;">
-                <div style="margin-bottom: 2rem;">
-                    <h1 style="font-family: Poppins; font-size: 2.5rem; color: #333; margin: 0 0 1rem 0; font-weight: bold;">KEYNOTE SPEAKERS</h1>
-                    <p style="font-family: Poppins; font-size: 1.1rem; color: #666; line-height: 1.6; margin: 0;">
+            <div class="mobileview-notmainpadding" style="flex: 1; background-color: white; border-radius: 15px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <div style="margin-bottom: 3rem;">
+                    <h1 style="font-family: Poppins; font-size: 2.5rem; color: #1e293b; margin: 0 0 1rem 0; font-weight: 700;">ICICI-2026 Keynote Speakers</h1>
+                    <p style="font-family: Poppins; font-size: 1.1rem; color: #64748b; line-height: 1.6; margin: 0;">
                         We are honored to have distinguished speakers from leading institutions around the world who will share their expertise and insights in various domains of computational intelligence.
                     </p>
                 </div>
 
-                <div style="background-color: #f8f9fa; border-radius: 12px; padding: 1.5rem; margin-top: 2rem; border: 1px solid #e2e8f0;">
-                    <h3 style="color: #333; font-family: Poppins; font-size: 1.3rem; font-weight: 600; margin: 0 0 1rem 0;">Session Information</h3>
-                    <p style="color: #666; font-family: Poppins; font-size: 0.95rem; line-height: 1.6; margin: 0;">
-                        Each keynote session will be approximately 45 minutes long, including a 35-minute presentation followed by a 10-minute Q&A session. 
-                        Sessions will be held in the main auditorium and will also be available via live streaming for remote participants. 
-                        All registered attendees will have access to session recordings for 30 days after the conference.
-                    </p>
+                <!-- Speakers Grid -->
+                <div class="speakers-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <!-- Speaker 1 -->
+                    <div class="speaker-card" style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border-radius: 15px; padding: 1.5rem; border: 2px solid #e2e8f0; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                        <div class="speaker-photo" style="width: 150px; height: 150px; margin: 0 auto 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);">
+                            <img src="assets/Speaker/Professor Bernadette Bouchon-Meunier.jpg" alt="Professor Bernadette Bouchon-Meunier" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="text-align: center;">
+                            <h3 style="font-family: Poppins; font-size: 1.3rem; font-weight: 600; color: #1e293b; margin: 0 0 0.5rem 0;">Professor Bernadette Bouchon-Meunier</h3>
+                            <p style="font-family: Poppins; font-size: 1rem; color: #64748b; line-height: 1.5; margin: 0;">
+                                National Centre for Scientific Research,<br/>France
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 2 -->
+                    <div class="speaker-card" style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border-radius: 15px; padding: 1.5rem; border: 2px solid #e2e8f0; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                        <div class="speaker-photo" style="width: 150px; height: 150px; margin: 0 auto 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 8px 20px rgba(240, 147, 251, 0.3);">
+                            <img src="assets/Speaker/Professor Valentina Emilia Balas.jpg" alt="Professor Valentina Emilia Balas" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="text-align: center;">
+                            <h3 style="font-family: Poppins; font-size: 1.3rem; font-weight: 600; color: #1e293b; margin: 0 0 0.5rem 0;">Professor Valentina Emilia Balas</h3>
+                            <p style="font-family: Poppins; font-size: 1rem; color: #64748b; line-height: 1.5; margin: 0;">
+                                Aurel Vlaicu University of Arad,<br/>Romania
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 3 -->
+                    <div class="speaker-card" style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border-radius: 15px; padding: 1.5rem; border: 2px solid #e2e8f0; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                        <div class="speaker-photo" style="width: 150px; height: 150px; margin: 0 auto 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 8px 20px rgba(79, 172, 254, 0.3);">
+                            <img src="assets/Speaker/Professor A. Q. Ansari.png" alt="Professor A. Q. Ansari" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="text-align: center;">
+                            <h3 style="font-family: Poppins; font-size: 1.3rem; font-weight: 600; color: #1e293b; margin: 0 0 0.5rem 0;">Professor A. Q. Ansari</h3>
+                            <p style="font-family: Poppins; font-size: 1rem; color: #64748b; line-height: 1.5; margin: 0;">
+                                Jamia Millia Islamia,<br/>New Delhi
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 4 -->
+                    <div class="speaker-card" style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border-radius: 15px; padding: 1.5rem; border: 2px solid #e2e8f0; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                        <div class="speaker-photo" style="width: 150px; height: 150px; margin: 0 auto 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 8px 20px rgba(67, 233, 123, 0.3);">
+                            <img src="assets/Speaker/Professor B. k. Pangrahi.png" alt="Professor B. K. Panigrahi" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="text-align: center;">
+                            <h3 style="font-family: Poppins; font-size: 1.3rem; font-weight: 600; color: #1e293b; margin: 0 0 0.5rem 0;">Professor B. K. Panigrahi</h3>
+                            <p style="font-family: Poppins; font-size: 1rem; color: #64748b; line-height: 1.5; margin: 0;">
+                                Indian Institute of Technology,<br/>Delhi
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 5 -->
+                    <div class="speaker-card" style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border-radius: 15px; padding: 1.5rem; border: 2px solid #e2e8f0; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                        <div class="speaker-photo" style="width: 150px; height: 150px; margin: 0 auto 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 8px 20px rgba(250, 112, 154, 0.3);">
+                            <img src="assets/Speaker/Professor R. Balasubramanian.jpg" alt="Professor R. Balasubramanian" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="text-align: center;">
+                            <h3 style="font-family: Poppins; font-size: 1.3rem; font-weight: 600; color: #1e293b; margin: 0 0 0.5rem 0;">Professor R. Balasubramanian</h3>
+                            <p style="font-family: Poppins; font-size: 1rem; color: #64748b; line-height: 1.5; margin: 0;">
+                                Indian Institute of Technology,<br/>Roorkee
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 6 -->
+                    <div class="speaker-card" style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border-radius: 15px; padding: 1.5rem; border: 2px solid #e2e8f0; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                        <div class="speaker-photo" style="width: 150px; height: 150px; margin: 0 auto 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 8px 20px rgba(168, 237, 234, 0.3);">
+                            <img src="assets/Speaker/Professor Kirti Seth.jpg" alt="Professor Kirti Seth" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="text-align: center;">
+                            <h3 style="font-family: Poppins; font-size: 1.3rem; font-weight: 600; color: #1e293b; margin: 0 0 0.5rem 0;">Professor Kirti Seth</h3>
+                            <p style="font-family: Poppins; font-size: 1rem; color: #64748b; line-height: 1.5; margin: 0;">
+                                Inha University,<br/>Uzbekistan
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 7 -->
+                    <div class="speaker-card" style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border-radius: 15px; padding: 1.5rem; border: 2px solid #e2e8f0; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                        <div class="speaker-photo" style="width: 150px; height: 150px; margin: 0 auto 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 8px 20px rgba(255, 154, 158, 0.3);">
+                            <img src="assets/Speaker/Dr. Mangal Sain.jpg" alt="Dr. Mangal Sain" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="text-align: center;">
+                            <h3 style="font-family: Poppins; font-size: 1.3rem; font-weight: 600; color: #1e293b; margin: 0 0 0.5rem 0;">Dr. Mangal Sain</h3>
+                            <p style="font-family: Poppins; font-size: 1rem; color: #64748b; line-height: 1.5; margin: 0;">
+                                Dongseo University,<br/>South Korea
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Speaker 8 -->
+                    <div class="speaker-card" style="background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); border-radius: 15px; padding: 1.5rem; border: 2px solid #e2e8f0; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                        <div class="speaker-photo" style="width: 150px; height: 150px; margin: 0 auto 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 8px 20px rgba(255, 236, 210, 0.3);">
+                            <img src="assets/Speaker/Dr Sunil Kumar.jpg" alt="Dr. Sunil Kumar" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="text-align: center;">
+                            <h3 style="font-family: Poppins; font-size: 1.3rem; font-weight: 600; color: #1e293b; margin: 0 0 0.5rem 0;">Dr. Sunil Kumar</h3>
+                            <p style="font-family: Poppins; font-size: 1rem; color: #64748b; line-height: 1.5; margin: 0;">
+                                London Metropolitan University,<br/>United Kingdom
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
+                
             </div>
         </div>
     </section>

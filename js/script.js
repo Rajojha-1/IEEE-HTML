@@ -211,7 +211,7 @@ function handleSwipe() {
         if (isMobile) {
             posterImage.src = 'assets/POSTER.png';
         } else {
-            posterImage.src = 'assets/POSTER-1.png';
+            posterImage.src = 'assets/FINALPOSTER.png';
         }
     }
 
