@@ -209,9 +209,9 @@ function handleSwipe() {
     function updatePosterImage() {
         if (!posterImage) return;
         if (isMobile) {
-            posterImage.src = 'assets/POSTER.png';
+            posterImage.src = 'assets/KIET-NAVBAR-MOBILE.png';
         } else {
-            posterImage.src = 'assets/FINALPOSTER.png';
+            posterImage.src = 'assets/KIET-NAVBAR-DESKTOP.png';
         }
     }
 
